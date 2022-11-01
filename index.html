@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Provance_bakery | onlain calculator</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="initial section">
+            <div class="container">
+                <div class="initial__inner">
+                    <h2 class="initial__title section__title">Выберите исходные пропорции</h2>
+                    <div class="initial__figures">
+                        <div class="initial__figure" data-initial="circle">
+                            <div class="initial__circle"></div>
+                            <p class="initial__form-subtitle">Круг</p>
+                        </div>
+                        <div class="initial__figure" data-initial="rectangle">
+                            <div class="initial__rectangle"></div>
+                            <p class="initial__form-subtitle">Прямоугольник</p>
+                        </div>
+                    </div>
+                    <form class="initial__form">
+                        <div class="initial__form-wrapper initial__form-width hidden" data-initial-form="width">
+                            <label class="initial__label" for="#width">Ширина</label>
+                            <input class="initial__input" type="text" id="width" placeholder="Ширина, см">
+                        </div>
+                        <div class="initial__form-wrapper initial__form-length hidden" data-initial-form="length">
+                            <label class="initial__label" for="#length">Длинна</label>
+                            <input class="initial__input" type="text" id="length" placeholder="Длинна, см">
+                        </div>
+                        <div class="initial__form-wrapper initial__form-diametr hidden" data-initial-form="diametr">
+                            <label class="initial__label" for="#diametr">Диаметр</label>
+                            <input class="initial__input" type="text" id="diametr" placeholder="Диаметр, см">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="initial section">
+            <div class="container">
+                <div class="initial__inner">
+                    <h2 class="initial__title section__title">Выберите желаемые пропорции</h2>
+                    <div class="initial__figures">
+                        <div class="initial__figure" data-outcome="circle">
+                            <div class="initial__circle"></div>
+                            <p class="initial__form-subtitle">Круг</p>
+                        </div>
+                        <div class="initial__figure" data-outcome="rectangle">
+                            <div class="initial__rectangle"></div>
+                            <p class="initial__form-subtitle">Прямоугольник</p>
+                        </div>
+                    </div>
+                    <form class="initial__form">
+                        <div class="initial__form-wrapper initial__form-width hidden" data-outcome-form="width">
+                            <label  class="initial__label" for="#length2">Ширина</label>
+                            <input class="initial__input" type="text" id="width2" placeholder="Ширина, см">
+                        </div>
+                        <div class="initial__form-wrapper initial__form-length hidden" data-outcome-form="length">
+                            <label  class="initial__label" for="#length2">Длинна</label>
+                            <input class="initial__input" type="text" id="length2" placeholder="Длинна, см">
+                        </div>
+                        <div class="initial__form-wrapper initial__form-diametr hidden" data-outcome-form="diametr">
+                            <label  class="initial__label" for="#diametr2">Диаметр</label>
+                            <input class="initial__input" type="text" id="diametr2" placeholder="Диаметр, см">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section coefficient">
+            <div class="container">
+                <div class="coefficient__inner">
+                    <button class="coefficient__btn">Рассчитать коэффициент</button>
+                    <div class="coefficient__result">
+                        <p class="coefficient__result-text">Коэффициент</p>
+                        <p class="coefficient__result-number"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/calc.js"></script>
+</body>
+</html>

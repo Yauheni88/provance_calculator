@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 15px 0;
+}
+
+.section__title {
+  font-size: clamp(1.5rem, 1.352rem + 0.74vw, 2rem);
+  text-align: center;
+  color: rgb(46, 45, 45);
+  margin-bottom: clamp(0.938rem, 0.66rem + 1.39vw, 1.875rem);
+}
+
+.initial__figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .initial__figures {
+    gap: 15px;
+  }
+}
+.initial__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 15px;
+  background-color: #fbfbfb;
+  border: 1px solid #e5e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .initial__figure {
+    padding: 15px 10px;
+  }
+}
+.initial__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #cbcbcb;
+}
+@media screen and (max-width: 768px) {
+  .initial__circle {
+    width: 70px;
+    height: 70px;
+  }
+}
+.initial__rectangle {
+  width: 140px;
+  height: 100px;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+}
+@media screen and (max-width: 768px) {
+  .initial__rectangle {
+    width: 100px;
+    height: 60px;
+  }
+}
+.initial__form-subtitle {
+  margin-top: 10px;
+}
+.initial__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.initial__form-wrapper {
+  max-width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+.initial__label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.initial__input {
+  padding: 7px 10px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #cbcbcb;
+}
+
+.active-figure {
+  border: 1px solid rgba(151, 178, 227, 0.8117647059);
+  outline: 1px solid rgba(151, 178, 227, 0.8117647059);
+}
+
+.hidden {
+  display: none;
+}
+
+.coefficient__btn {
+  display: block;
+  outline: none;
+  border: none;
+  background: rgba(240, 68, 162, 0.8117647059);
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 auto 15px auto;
+  cursor: pointer;
+}
+.coefficient__result {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

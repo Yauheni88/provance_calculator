@@ -1,0 +1,124 @@
+.section {
+    padding: 15px 0;
+}
+
+.section__title {
+    font-size: clamp(1.5rem, 1.352rem + 0.74vw, 2rem);
+    text-align: center;
+    color: rgb(46 45 45);
+    margin-bottom: clamp(0.938rem, 0.66rem + 1.39vw, 1.875rem);
+}
+
+.initial {
+    &__figures {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 25px;
+        margin-bottom: 25px;
+        @media screen and (max-width: 768px) {
+            gap: 15px;
+        }
+    }
+
+    &__figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px 15px;
+        background-color: #fbfbfb;
+        border: 1px solid #e5e2e2;
+        border-radius: 5px;
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+            padding: 15px 10px;
+        }
+    }
+
+    &__circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #cbcbcb;
+        @media screen and (max-width: 768px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__rectangle {
+        width: 140px;
+        height: 100px;
+        border: 1px solid #cbcbcb;
+        border-radius: 3px;
+        @media screen and (max-width: 768px) {
+            width: 100px;
+            height: 60px;
+        }
+    }
+
+    &__form-subtitle {
+        margin-top: 10px;
+    }
+
+    // Форма ввода ширины длинны диаметра
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    &__form-wrapper {
+        max-width: 47%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        padding: 7px 10px;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #cbcbcb;
+    }
+}
+.active-figure {
+    border: 1px solid #97b2e3cf;
+    outline: 1px solid #97b2e3cf;
+}
+
+.hidden {
+    display: none;
+}
+
+.coefficient {
+    &__btn {
+        display: block;
+        outline: none;
+        border: none;
+        background: #f044a2cf;
+        padding: 10px 15px;
+        color: #fff;
+        border-radius: 5px;
+        margin: 0 auto 15px auto;
+        cursor: pointer;
+    }
+
+    &__result {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__result-number {
+        
+    }
+}
